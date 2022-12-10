@@ -1,0 +1,16 @@
+Information gathering is the first phase of any penetration test
+What technologies are being used? What vulnerabilities exist? More about the IP address
+Passive information gathering gaining as much knowledge as possible without engaging with the target
+active information gathering  as much knowledge as possible while engaging with the target <-- this phase requires authorization
+
+Passive information gathering:
+ip addresses dns info
+domain names and domain ownership
+email addresses and social media
+web technologies
+Sub domains
+
+Active information gathering
+discovering open ports
+Infastructure of a target network
+Enumeration information
