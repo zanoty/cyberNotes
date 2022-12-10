@@ -1,0 +1,18 @@
+	• UAC (user account control) ( do you want to allow this device to make changes
+		○ used to prevent unauthorized changes 
+		○ ensrures changes need approval from an admin
+		○ non privledged users attempting to execute a privleged prgoram get a credential prompt
+		○ attacks can bypass uac in order to execute malicious executables with elevated  privlages 
+	• bypassing uac
+		○ need to access an admin account
+		○ uac is what allows a program to execute with admin
+		○ various integrity levels below high programs can be executed with admin without asking for confirmation
+		○ tool to use depends on the version of windows
+	• bypassing uac with uacme
+		○ uacme tool used to bypass windows uac
+			§ https://github.com/hfiref0x/UACME
+		○ uaceme github reproistory contians a very well documented list of methods used to bypass uac on muliple versions of windows
+		○ allows attackers to execute malicious payloads on to a windows target with admin privileges by abusing windows auto elevate
+		○ the uaceme github has more than 60 exploits that can by pass uac depending on the version of windows 
+		○ gives you an executable to place on target system that executable executes a payload with admin privileges
+UACMe requires uac to be on default settings
