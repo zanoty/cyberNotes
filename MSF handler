@@ -1,5 +1,0 @@
-MSFconsole
-  use multi/handler
-    set options
-      set payload <payload>
-        run
