@@ -1,0 +1,28 @@
+DNS domain name system
+DNS Records
+	A - Resolves a hostname or domain to an ipv4 address
+	AAAA - resolves a hostname to an ipv6 address
+	NS reference to the domains name server
+	MX mail server
+	CNAME used for domain aliases
+	TXT text record
+	HINFO host information
+	SOA domain authority
+	SRV service records PTR resolves an IP address to a host name
+DNS interrogation
+	Dns interrogation is the process of enumerating dns records for a specific domain
+	The objective is to probe a dns server with records for a specific domain
+the process can provide Ip addresses of the domain subdomain mailserver etc
+DNS zone transfer
+	Copy or transfer of zone files from one dns to another is known as zone transfer
+if left unsecured this can be abused to copy the zone file from the primary dns to another dns
+	Zone transfer can provide a holistic view of an orginizations network
+	Internal network addresses maybe found on an orginizations dns server
+sudo vim /etc/hosts     list of hostnames/ipaddresses local dns server
+Dnsenum
+	dnsenum (website)
+Dig
+	dig axfr @(Name server) (domain)
+Fierce 
+	Fierce -h help
+Finds ip's against specified domains
