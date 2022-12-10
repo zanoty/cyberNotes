@@ -1,0 +1,2 @@
+nmap <IP>
+nmap -sV <IP> #service scan
