@@ -1,0 +1,7 @@
+	• alternate data streams (ADS)
+		○ ADS is an NFTS (New Technology File System) file designed to provide compatibility with MacOS HFS (hierarchical file system)
+		○ Any file created on an NTFS drive will have two different forks/streams
+			§ Data Stream - Default stream that contains the data of the file
+			§ Resource Stream- Typically contains the metadata of the file
+		○ Attackers can use ADS to hide Malicious code or Executables in the file attribute resource stream (metadata) of a legitimate file
+this technique is usually used to evade basic signature based antiviruses and static scanning tools
