@@ -1,1 +1,5 @@
-
+post explotation  tool that lalows extration of clear text passwords hashes and kerberos tickets from ram
+sam database is a database on windows that stores hashed passwords
+mimikatz can extract hashes from the lsass.exe process where hashes are cached
+can also use inbuilt meterpreter extension KIWI
+requires elevated privs
